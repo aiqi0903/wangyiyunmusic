@@ -1,0 +1,379 @@
+@charset "UTF-8";
+body {
+    position: relative;
+    background-color: #fff;
+    transition: background-color 0.2s linear;
+}
+
+
+/* header start */
+
+#header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0.4rem;
+    background-color: #fd5222;
+    z-index: 9;
+}
+
+#header .back {
+    width: 0.5rem;
+    flex: 0 0 0.5rem;
+}
+
+.back a {
+    display: flex;
+}
+
+.back a span.iconfont {
+    display: block;
+    width: 100%;
+    font-size: 0.25rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.4rem;
+}
+
+#header .search {
+    display: flex;
+    flex: 1;
+    margin: 0.02rem 0.13rem 0 0;
+}
+
+.search .s-bar {
+    position: relative;
+    flex: 1;
+    height: 0.33rem;
+    background-color: #fd5222;
+    color: #fff;
+    line-height: 0.33rem;
+    font-size: 0.15rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.01rem solid #ccc;
+    outline: none;
+}
+
+.s-bar::placeholder {
+    color: #ccc;
+}
+
+.search .iconcha {
+    position: absolute;
+    top: 0.07rem;
+    right: 0.12rem;
+    color: #fff;
+    font-size: 0.25rem;
+}
+
+.search .s-list {
+    position: absolute;
+    top: 0.43rem;
+    left: 0.13rem;
+    right: 0.13rem;
+    background-color: #fff;
+    box-shadow: 0.01rem 0.01rem 0.05rem #ccc;
+}
+
+.s-list ul li {
+    display: flex;
+    justify-content: space-between;
+    height: 0.4rem;
+    border-top: 0.005rem solid #f0f0f0;
+    line-height: 0.4rem;
+    color: #999;
+}
+
+.s-list ul li.s-l-title {
+    border-top: none;
+    text-indent: 0.1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 0.145rem;
+    color: #4d4dff;
+}
+
+.s-list ul li .iconfont {
+    width: 0.4rem;
+    flex: 0 0 0.25rem;
+    margin-right: 0.1rem;
+    font-size: 0.25rem;
+    text-align: center;
+    text-indent: 0.1rem;
+}
+
+.s-list ul li .songname {
+    flex: 1;
+    margin-right: 0.1rem;
+    font-size: 0.145rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/* header end */
+
+
+/* searchResult start */
+
+#result {
+    position: absolute;
+    top: 0.8rem;
+    left: 0;
+    right: 0;
+    background-color: pink;
+}
+
+#result .r-menu {
+    position: fixed;
+    top: 0.4rem;
+    left: 0;
+    right: -2.15rem;
+    height: 0.4rem;
+    background-color: #fd5222;
+}
+
+.r-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.r-menu ul li {
+    flex: 1;
+    height: 0.35rem;
+    font-size: 0.13rem;
+    color: #fff;
+    line-height: 0.35rem;
+    text-align: center;
+}
+
+.r-menu ul li.select {
+    border-bottom: 0.02rem solid #fff;
+}
+
+#result .r-container {
+    height: 4rem;
+    background-color: #fff;
+    font-size: 0.14rem;
+}
+
+.r-container .r-c-title {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 0.4rem;
+    padding: 0.11rem;
+    line-height: 0.2rem;
+}
+
+.r-c-title a .iconfont {
+    margin-right: 0.04rem;
+    font-size: 0.16rem;
+    color: #333;
+}
+
+.r-c-title a .name {
+    font-size: 0.15rem;
+    color: #333;
+}
+
+.r-c-t-left {
+    width: 0.9rem;
+}
+
+.r-c-t-right {
+    width: 0.6rem;
+}
+
+.r-container .r-c-list {
+    padding: 0 0.05rem;
+    box-sizing: border-box;
+}
+
+.r-c-item {
+    border-top: 0.01rem solid #eee;
+}
+
+.r-c-item a {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.05rem 0;
+}
+
+.r-c-item a:active {
+    background-color: #ccc;
+}
+
+.r-c-item a span.blue {
+    color: #4d4dff;
+}
+
+.r-c-item a .song {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.song .s-name {
+    font-size: 0.12rem;
+    line-height: 0.19rem;
+    color: #333;
+}
+
+.song .s-desc {
+    font-size: 0.1rem;
+    line-height: 0.16rem;
+    color: #808080;
+}
+
+.r-c-item a .play {
+    display: flex;
+    width: 0.42rem;
+    height: 0.32rem;
+    flex: 0 0 0.42rem;
+    color: #ccc;
+}
+
+.play .iconfont {
+    font-size: 0.2rem;
+    padding-top: 0.04rem;
+}
+
+
+/* searchResult end */
+
+
+/* hotSearch start */
+
+#hot {
+    height: 1.8rem;
+    margin-top: 0.6rem;
+    padding: 0.13rem;
+    box-sizing: border-box;
+}
+
+#hot .hot-title {
+    height: 0.3rem;
+    margin-bottom: 0.05rem;
+    font-size: 0.14rem;
+    font-weight: bold;
+    line-height: 0.3rem;
+    color: #333;
+}
+
+#hot .hot-list {
+    height: 1.21rem;
+    font-size: 0.13rem;
+}
+
+.hot-list ul {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.hot-list ul li {
+    height: 0.24rem;
+    margin: 0 0.05rem 0.05rem 0;
+    padding: 0.13rem;
+    box-sizing: border-box;
+    background-color: #ebeced;
+    line-height: 0.001rem;
+    color: #555;
+    border-radius: 0.12rem;
+}
+
+
+/* hotSearch end */
+
+
+/* historicRecords start */
+
+#history {
+    margin-top: 0.13rem;
+    padding: 0.13rem;
+    box-sizing: border-box;
+}
+
+#history .history-title {
+    display: flex;
+    justify-content: space-between;
+    height: 0.3rem;
+    margin-bottom: 0.05rem;
+    font-size: 0.14rem;
+    font-weight: bold;
+    line-height: 0.3rem;
+    color: #333;
+}
+
+.history-title span.iconfont {
+    font-size: 0.2rem;
+    color: #ccc;
+}
+
+#history .delete {
+    position: fixed;
+    top: 40%;
+    bottom: 40%;
+    left: 0.5rem;
+    right: 0.5rem;
+    background-color: #fff;
+    font-size: 0.12rem;
+    letter-spacing: 0.05rem;
+    border-radius: 0.05rem;
+    box-shadow: 0 0 0.1rem #999;
+}
+
+.delete>div {
+    height: 34%;
+    margin: 8%;
+}
+
+.delete .d-info {
+    color: #666;
+}
+
+.delete .d-btn {
+    padding-left: 40%;
+    box-sizing: border-box;
+    color: #fc5d5d;
+}
+
+.d-btn>span {
+    margin-right: 10%;
+}
+
+#history .history-list {
+    font-size: 0.13rem;
+}
+
+.history-list ul {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.history-list ul li {
+    height: 0.24rem;
+    margin: 0 0.05rem 0.05rem 0;
+    padding: 0.13rem;
+    box-sizing: border-box;
+    background-color: #ebeced;
+    line-height: 0.001rem;
+    color: #555;
+    border-radius: 0.12rem;
+}
+
+
+/* historicRecords end */

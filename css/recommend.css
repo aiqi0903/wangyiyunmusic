@@ -1,0 +1,361 @@
+@charset "UTF-8";
+html,
+body {
+    height: 100%;
+}
+
+#recommend-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* header start */
+
+#header {
+    box-sizing: border-box;
+    width: 100%;
+    height: 1.58rem;
+    padding-top: 0.19rem;
+}
+
+.h-control {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0.4rem;
+    background-color: #db2f01;
+    line-height: 0.4rem;
+    z-index: 9;
+}
+
+.h-control>div {
+    width: 0.5rem;
+}
+
+.h-control a {
+    display: flex;
+}
+
+.h-control a span.iconfont {
+    display: block;
+    width: 100%;
+    font-size: 0.2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.h-control .back {
+    display: flex;
+    justify-content: space-around;
+    width: 1.2rem;
+}
+
+.h-control .back span {
+    height: 100%;
+    color: #fff;
+    font-size: 0.14rem;
+    font-weight: bold;
+    line-height: 0.4rem;
+}
+
+.h-bg {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 1.53rem;
+}
+
+.h-bg .iconfont {
+    position: absolute;
+    left: 0.2rem;
+    bottom: 0.4rem;
+    font-size: 0.7rem;
+    color: #eee;
+}
+
+.h-bg .iconfont i {
+    display: block;
+    position: absolute;
+    top: 0.3rem;
+    left: 0.15rem;
+    width: 0.4rem;
+    height: 0.4rem;
+    font-size: 0.3rem;
+    font-style: normal;
+    text-align: center;
+    line-height: 0.4rem;
+    color: #fff;
+}
+
+.h-bg .h-b-info {
+    position: absolute;
+    left: 0.2rem;
+    bottom: 0.2rem;
+    font-size: 0.09rem;
+    color: #ccc;
+}
+
+
+/* header end */
+
+
+/* content start */
+
+#content {
+    overflow: hidden;
+    position: absolute;
+    top: 1.6rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.14rem 0.14rem 0 0;
+}
+
+.c-title {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 0.4rem;
+    padding: 0.11rem;
+    line-height: 0.2rem;
+}
+
+.c-t-left {
+    width: 0.77rem;
+}
+
+.c-t-right {
+    width: 0.6rem;
+}
+
+.c-title a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-title .iconfont {
+    margin-right: 0.04rem;
+    font-size: 0.16rem;
+    color: #333;
+}
+
+.c-title .name {
+    font-size: 0.12rem;
+}
+
+.c-container {
+    padding: 0 0.13rem;
+    box-sizing: border-box;
+}
+
+.c-c-item {
+    border-top: 0.01rem solid #eee;
+}
+
+.c-c-item a {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.077rem 0;
+}
+
+.c-c-item a:active {
+    background-color: #ccc;
+}
+
+.c-c-item .info {
+    flex: 1;
+    display: flex;
+    height: 0.32rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.info .info-img {
+    display: flex;
+    width: 0.32rem;
+    height: 0.32rem;
+    flex: 0 0 0.32rem;
+}
+
+.info .info-img img {
+    width: 100%;
+}
+
+.info .info-title {
+    flex: 1;
+    margin-left: 0.08rem;
+}
+
+.info .info-title .info-text {
+    font-size: 0.1rem;
+    line-height: 0.2rem;
+    color: #333;
+}
+
+.info .info-title .info-desc {
+    font-size: 0.08rem;
+    line-height: 0.14rem;
+    color: #808080;
+}
+
+.c-c-item .play {
+    display: flex;
+    width: 0.42rem;
+    height: 0.32rem;
+    flex: 0 0 0.42rem;
+}
+
+.play .iconfont {
+    font-size: 0.24rem;
+    padding-top: 0.04rem;
+}
+
+
+/* content end */
+
+
+/* control start */
+
+#control {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0.39rem;
+    padding: 0.04rem 0.05rem;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+#control a {
+    display: flex;
+}
+
+#control .song-container {
+    display: flex;
+    align-content: center;
+    flex: 1;
+}
+
+.song-container .s-c-img {
+    overflow: hidden;
+    display: flex;
+    width: 0.3rem;
+    flex: 0 0 0.3rem;
+    height: 0.3rem;
+    margin-right: 0.04rem;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.s-c-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.song-container .s-c-info {
+    flex: 1;
+}
+
+.s-c-info .s-c-i-title {
+    font-size: 0.1rem;
+    color: #333;
+    line-height: 0.17rem;
+}
+
+.s-c-info .s-c-i-desc {
+    font-size: 0.08rem;
+    color: #909090;
+    line-height: 0.14rem;
+}
+
+#control .control-container {
+    display: flex;
+    align-items: center;
+    width: 0.58rem;
+    flex: 0 0 0.58rem;
+}
+
+.control-container .c-c-play {
+    position: relative;
+    width: 0.2rem;
+    height: 0.2rem;
+    background-color: #ff3a3a;
+    border-radius: 50%;
+}
+
+.c-c-play * {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.circle-bar-left,
+.circle-bar-right {
+    width: 0.2rem;
+    height: 0.2rem;
+    background-color: #e4e4e4;
+}
+
+.circle-bar-right {
+    clip: rect(0, auto, auto, 0.1em);
+}
+
+.circle-bar-left {
+    clip: rect(0, 0.1em, auto, 0);
+}
+
+.c-c-play .mask {
+    width: 0.16em;
+    height: 0.16em;
+    background-color: #fff;
+    text-align: center;
+    line-height: 0.16rem;
+}
+
+.c-c-play .iconfont {
+    width: 100%;
+    height: 100%;
+    font-size: 0.11rem;
+    font-weight: bold;
+}
+
+.c-c-play .iconfont.icon-zanting {
+    color: #ff3a3a;
+}
+
+.c-c-play .iconfont.icon-bofang2 {
+    margin-left: 0.01rem;
+    color: #e4e4e4;
+}
+
+.control-container .c-c-songlist {
+    display: flex;
+    width: 0.21rem;
+    height: 0.21rem;
+    margin-left: 0.14rem;
+}
+
+.c-c-songlist .iconfont {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 0.2rem;
+    font-size: 0.18rem;
+    color: #4e4e4e;
+}
+
+
+/* control end */

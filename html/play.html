@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=320, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>播放</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1261234_9hknsuhmchd.css">
+    <link rel="stylesheet" href="../css/play.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/play.js"></script>
+</head>
+
+<body>
+
+    <div id="play-wrapper">
+        <!-- header start -->
+        <div id="header">
+            <a class="back"><span class="iconfont icondaiweizuojiantou"></span></a>
+            <div class="song">
+                <div class="s-info">
+                    <span class="s-i-name"></span>
+                    <span class="s-i-author"></span>
+                </div>
+                <div class="s-i-img">
+                    <img src="" alt="">
+                    <span>关注</span>
+                </div>
+            </div>
+            <a><span class="iconfont iconshare"></span></a>
+        </div>
+        <!-- header end -->
+
+        <!-- turntable start -->
+        <div id="turntable" style="opacity:1;">
+            <img src="" alt="">
+        </div>
+        <!-- turntable end -->
+
+        <!-- lyric start -->
+        <div id="lyric" style="opacity:0;">
+            <div class="lyric-container">
+                <!-- <p>你的(我的天空Remix)</p> -->
+            </div>
+        </div>
+        <!-- lyric end -->
+
+        <!-- control start -->
+        <div id="control">
+            <div class="c-progress">
+                <span class="presentTime time"></span>
+                <div class="c-p-bar">
+                    <div class="c-p-b-bg"></div>
+                    <div class="c-p-b-ball"></div>
+                </div>
+                <span class="totalTime time"></span>
+            </div>
+            <div class="c-container">
+                <div class="c-c-prev">
+                    <span class="iconfont iconshangyishou"></span>
+                </div>
+                <div class="c-c-play">
+                    <span class="iconfont iconzanting"></span>
+                </div>
+                <div class="c-c-next">
+                    <span class="iconfont iconshangyishou1"></span>
+                </div>
+            </div>
+        </div>
+        <!-- control end -->
+
+    </div>
+
+
+    <script>
+        document.documentElement.style.fontSize = 100 * (window.innerWidth / 320) + 'px';
+    </script>
+</body>
+
+</html>

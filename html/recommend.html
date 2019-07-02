@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=320, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>推荐</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/recommend.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/recommend.js"></script>
+</head>
+
+<body>
+    <div id="recommend-wrapper">
+        <!-- header start -->
+        <div id="header">
+            <div class="h-control">
+                <div class="back">
+                    <a href="../index.html">
+                        <span class="iconfont icon-youjiantou"></span>
+                    </a>
+                    <span>每日推荐</span>
+                </div>
+                <div class="problem">
+                    <a href="#">
+                        <span class="iconfont icon-wenhaoyuanyiwenxianxing"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="h-bg">
+                <span class="iconfont icon-rili">
+                    <i></i>
+                </span>
+                <span class="h-b-info">根据你的音乐口味生成,每天6:00更新</span>
+            </div>
+        </div>
+        <!-- header end -->
+
+        <!-- content start -->
+        <div id="content">
+            <div class="c-title">
+                <div class="c-t-left">
+                    <a href="#">
+                        <span class="iconfont icon-bofang"></span>
+                        <span class="name">播放全部</span>
+                    </a>
+                </div>
+                <div class="c-t-right">
+                    <a href="#">
+                        <span class="iconfont icon-liebiao"></span>
+                        <span class="name">多选</span>
+                    </a>
+                </div>
+            </div>
+            <div class="c-container">
+                <ul class="c-c-list">
+                    <li class="c-c-item initial">
+                        <a href="#control">
+                            <div class="info">
+                                <div class="info-img">
+                                    <img src="../images/你的(我的天空Remix).jpg" alt="">
+                                </div>
+                                <div class="info-title">
+                                    <div class="info-text">
+                                        你的(我的天空Remix)
+                                    </div>
+                                    <div class="info-desc">
+                                        张德帅Sway&nbsp;-&nbsp;你的(我的天空Remix)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="play">
+                                <span class="iconfont icon-bofang1"></span>
+                                <span class="iconfont icon-more1170511easyiconnet"></span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- content end -->
+
+        <!-- control start -->
+        <div id="control" name="control" style="display:none;">
+            <a href="./play.html">
+                <div class="song-container">
+                    <div class="s-c-img">
+                        <img src="../images/你的(我的天空Remix).jpg" alt="">
+                    </div>
+                    <div class="s-c-info">
+                        <div class="s-c-i-title">
+                            你的(我的天空Remix)
+                        </div>
+                        <div class="s-c-i-desc">
+                            滑动可以切换音乐哦~
+                        </div>
+                    </div>
+                </div>
+                <div class="control-container">
+                    <div class="c-c-play">
+                        <div class="circle-bar-left"></div>
+                        <div class="circle-bar-right"></div>
+                        <div class="mask">
+                            <span class="iconfont icon-zanting"></span>
+                        </div>
+                    </div>
+                    <div class="c-c-songlist">
+                        <span class="iconfont icon-bofangliebiao"></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- control end -->
+    </div>
+
+    <script>
+        document.documentElement.style.fontSize = 100 * (window.innerWidth / 320) + 'px';
+    </script>
+</body>
+
+</html>

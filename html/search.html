@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=320, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>搜索</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1261234_9hknsuhmchd.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/search.js"></script>
+</head>
+
+<body>
+    <!-- header start -->
+    <div id="header">
+        <div class="back">
+            <a href="../index.html">
+                <span class="iconfont icondaiweizuojiantou"></span>
+            </a>
+        </div>
+        <div class="search">
+            <input type="text" class="s-bar" placeholder="你的(我的天空Remix)">
+            <span class="iconfont iconcha" style="display: none"></span>
+            <div class="s-list" style="display: none;">
+                <ul>
+                    <li class="s-l-title">
+                        <span>搜索&nbsp;&nbsp;&nbsp;&nbsp;“你的(我的天空Remix)”</span>
+                    </li>
+                    <li class="s-l-item">
+                        <span class="iconfont icon-changyongicon-1"></span>
+                        <span class="songname">你的(我的天空Remix)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- header end -->
+
+    <!-- searchResult start -->
+    <div id="result" style="display: none;">
+        <div class="r-menu">
+            <ul class="r-m-list">
+                <li class="r-m-item">综合</li>
+                <li class="r-m-item select">单曲</li>
+                <li class="r-m-item">视频</li>
+                <li class="r-m-item">歌手</li>
+                <li class="r-m-item">专辑</li>
+                <li class="r-m-item">歌单</li>
+                <li class="r-m-item">主播电台</li>
+                <li class="r-m-item">用户</li>
+            </ul>
+        </div>
+        <div class="r-container">
+            <div class="r-c-title">
+                <div class="r-c-t-left">
+                    <a href="#">
+                        <span class="iconfont icon-bofang"></span>
+                        <span class="name">播放全部</span>
+                    </a>
+                </div>
+                <div class="r-c-t-right">
+                    <a href="#">
+                        <span class="iconfont icon-liebiao"></span>
+                        <span class="name">多选</span>
+                    </a>
+                </div>
+            </div>
+            <ul class='r-c-list'>
+                <li class="r-c-item">
+                    <!-- <a href="">
+                        <div class="song">
+                            <div class="s-name">
+                                你的(我的天空Remix)
+                            </div>
+                            <div class="s-desc">
+                                张德帅Sway&nbsp;-&nbsp;你的(我的天空Remix)
+                            </div>
+                        </div>
+                        <div class="play">
+                            <span class="iconfont iconbofang1"></span>
+                            <span class="iconfont icon-more1170511easyiconnet"></span>
+                        </div>
+                    </a> -->
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- searchResult end -->
+
+    <!-- hotSearch start -->
+    <div id="hot" style="display: block;">
+        <div class="hot-title">
+            热门搜索
+        </div>
+        <div class="hot-list">
+            <ul>
+                <li class="h-l-item">毕业季</li>
+                <li class="h-l-item">防弹少年团</li>
+                <li class="h-l-item">远东旋律张碧晨</li>
+                <li class="h-l-item">Tylor Swift新歌</li>
+                <li class="h-l-item"></li>
+                <li class="h-l-item">错的人</li>
+                <li class="h-l-item">我知道</li>
+                <li class="h-l-item">后来的我们</li>
+            </ul>
+        </div>
+    </div>
+    <!-- hotSearch end -->
+
+    <!-- historicRecords start -->
+    <div id="history" style="display: block;">
+        <div class="history-title">
+            <span>历史记录</span>
+            <span class="iconfont iconlajixiang"></span>
+        </div>
+        <div class="delete" style="display: none;">
+            <div class="d-info">
+                确定清空全部历史记录?
+            </div>
+            <div class="d-btn">
+                <span class="d-b-no">取消</span>
+                <span class="d-b-yes">清空</span>
+            </div>
+        </div>
+        <div class="history-list">
+            <ul>
+                <li class="h-l-item">不能说的秘密</li>
+                <li class="h-l-item">晴天</li>
+            </ul>
+        </div>
+    </div>
+    <!-- historicRecords end -->
+    <script>
+        document.documentElement.style.fontSize = 100 * (window.innerWidth / 320) + 'px';
+    </script>
+</body>
+
+</html>
